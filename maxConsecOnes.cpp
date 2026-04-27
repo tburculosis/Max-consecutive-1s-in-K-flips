@@ -30,9 +30,8 @@ int maxOnes(const std::vector<int>& arr, int k) {
             int len = right - left + 1;
             maxLen = std::max(maxLen, len);
         }
+        
         right++;
-
-        std::cout << "right = " << right << ", left = " << left << ", zeros = " << zeros << ", maxLen = " << maxLen << "\n";
     }
 
     return maxLen;
